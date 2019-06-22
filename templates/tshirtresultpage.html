@@ -13,7 +13,7 @@
 <body>
 <h1>Your recommended t-shirt is...</h1>
 <div class="card" style="width: 18rem;">
-    <img src= "{{ url_for('images', Load_Image) }}" class="card-img-top" id="tshirt_image" alt={{Load_Image}}>
+    <img src= "{{image}}" class="card-img-top" id="tshirt_image" alt={{Load_Image}}>
     <div class="card-body">
       <p class="card-text">{{description}}</p>
     </div>
