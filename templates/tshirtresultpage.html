@@ -12,9 +12,8 @@
 
 <body>
 <h1>Your recommended t-shirt is...</h1>
-
 <div class="card" style="width: 18rem;">
-    <img src= "{{ image_path }}" class="card-img-top" alt="...">
+    <img src= "{{ url_for('image_folder', filename =image_name) }}" class="card-img-top" id="tshirt_image" alt={{image_path}}>
     <div class="card-body">
       <p class="card-text">{{text_description}}</p>
     </div>
