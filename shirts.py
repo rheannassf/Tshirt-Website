@@ -1,9 +1,10 @@
-from flask import Flask, render_template, request, url_for
-
-app = Flask(__name__)
+from flask import Flask, render_template, url_for
+app = Flask("MyApp")
 
 @app.route('/tshirtresultpage')
-def show_image():
-    full_filename = ('images/'+'shirt1.jpeg')
-    return render_template("tshirtresultpage.html", image = full_filename)
+def tshirt_result():
+    description = 'What a cool tshirt!'
+    image='shirt1.jpeg'
+    return render_template("tshirtresultpage.html", image=image, name='Your Shirt', description=description)
+
 app.run(debug=True)
