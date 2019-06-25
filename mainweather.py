@@ -24,7 +24,7 @@ def questions():
 
 @app.route("/answer", methods=["POST"])
 def answer():
-form_data = request.form['purpose']
+    form_data = request.form['purpose']
     return form_data
 
 @app.route('/tshirtresultpage', methods=["POST"])
@@ -55,7 +55,6 @@ def response():
         image='shirt6.jpg'
         return render_template("tshirtresultpage.html", image=image, name='Your Shirt', description=description)
 
-app.run()
 
 
 
