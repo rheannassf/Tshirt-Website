@@ -18,6 +18,16 @@ def weather():
 def index():
     return render_template('index.html')
 
+@app.route("/questions")
+def questions():
+    return render_template('questions.html')
+
+@app.route("/answer", methods=["POST"])
+def answer():
+form_data = request.form['purpose']
+    return form_data
+
+
 app.run()
 
 
