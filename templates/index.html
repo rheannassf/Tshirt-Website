@@ -7,15 +7,13 @@
     <h1> Good Morning!! </h1>
     <h2> Let's decide what you're wearing today. </h2>
 <body>
+        <p> How is the weather looking? </p> 
     <form method="POST" action="/weather">
-    City: <raw_input type="text" name="city">
-        <raw_input type="submit"></raw_input>
+    City Name: <input type="text" name="city">
+        <input type="submit"></input>
     </form>
-</body>
-        <p> How is the weather looking? </p>
-            <div id="weather"></div>
-        
-        <p> {{weather}} </p>
-        
+    {{weather}}
 
+    <h3> Click <a href="/questions">here to begin getting ready!</a></h3>
+</body>
 </html>
