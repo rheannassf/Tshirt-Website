@@ -1,19 +1,30 @@
 <!doctype html>
 <html>
 
-    <form method="post" action="/answer">
-    <h3>Let's pick you a t-shirt...</h3>
-    <p>Dressing for work or play?</p>
-    <input type="radio" name="purpose" id="work" value="work"> Work
-    <input type="radio" name="purpose" id="play" value="play"> Play
-    <p>Looking to turn some heads?</p>
-    <input type="radio" name="purpose1" id="yes" value="yes"> Yes
-    <input type="radio" name="purpose1" id="no" value="no"> No
-    <p>Fancy a bit of cleavage?</p>
-    <input type="radio" name="purpose2" id="yup" value="yup"> Go on
-    <input type="radio" name="purpose2" id="nah" value="nah"> Nah 
-    <p><input type="submit" value="Submit"></p>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=News+Cycle|Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
+    <title> Dare to Wear! </title>
+</head>
+
+<body>
+    <form method="post" action="/tshirtresultpage">
+        <h3>Let's pick you a t-shirt...</h3>
+        <p>Dressing for work or play?</p>
+        <input type="radio" name="purpose" id="work" value="1"> Work
+        <input type="radio" name="purpose" id="play" value="0"> Play
+        <p>Looking to turn some heads?</p>
+        <input type="radio" name="purpose1" id="yes" value="1"> Yes
+        <input type="radio" name="purpose1" id="no" value="0"> No
+        <p>Fancy a bit of cleavage?</p>
+        <input type="radio" name="purpose2" id="yup" value="1"> Go on
+        <input type="radio" name="purpose2" id="nah" value="0"> Nah
+        <p><input type="submit" value="Submit"></p>
     </form>
+</body>
 
-
-    </html>
+</html>

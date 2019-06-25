@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=News+Cycle|Roboto" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="./css/styles.css">
@@ -13,7 +14,7 @@
 <body>
 <h1>Your recommended t-shirt is...</h1>
 <div class="card" style="width: 18rem;">
-    <img src= "{{ url_for('images', Load_Image) }}" class="card-img-top" id="tshirt_image" alt={{Load_Image}}>
+    <img src= "{{ url_for('static', filename=image) }}" class="card-img-top" id="tshirt_image" alt= "{{ name }}">
     <div class="card-body">
       <p class="card-text">{{description}}</p>
     </div>
