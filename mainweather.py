@@ -27,6 +27,33 @@ def answer():
 form_data = request.form['purpose']
     return form_data
 
+@app.route('/tshirtresultpage', methods=["POST"])
+def response():
+    form_data = request.form
+    radioval = (form_data["purpose"])
+    radioval1 = (form_data["purpose1"])
+    radioval2 = (form_data["purpose2"])
+    result = radioval + radioval1 + radioval2
+    if result == "111":
+        description = 'What a cool tshirt!'
+        image='shirt1.jpg'
+        return render_template("tshirtresultpage.html", image=image, name='Your Shirt', description=description)
+    if result == "011":
+        description = 'What a risky tshirt!'
+        image='shirt3.jpg'
+        return render_template("tshirtresultpage.html", image=image, name='Your Shirt', description=description)
+    if result == "100":
+        description = 'What a great tshirt!'
+        image='shirt2.jpg'
+        return render_template("tshirtresultpage.html", image=image, name='Your Shirt', description=description)
+    if result == "101":
+        description = 'What a snazzy tshirt!'
+        image='shirt4.jpg'
+        return render_template("tshirtresultpage.html", image=image, name='Your Shirt', description=description)
+    else:
+        description = 'What groovy tshirt!'
+        image='shirt6.jpg'
+        return render_template("tshirtresultpage.html", image=image, name='Your Shirt', description=description)
 
 app.run()
 
